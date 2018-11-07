@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Using a Handler and a Runnable.
+        /*
         val myHandler = Handler()
         val run = object: Runnable {
 
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         myHandler.post(run)
+         */
 
     }
 }
