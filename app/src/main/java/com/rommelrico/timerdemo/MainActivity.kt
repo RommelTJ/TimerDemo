@@ -26,5 +26,16 @@ class MainActivity : AppCompatActivity() {
         myHandler.post(run)
          */
 
+        // Using a CountDown Timer.
+        object: CountDownTimer(10000, 100) {
+            override fun onTick(millisUntilFinished: Long) {
+                Log.i("Seconds Left!", (millisUntilFinished / 1000).toString())
+            }
+
+            override fun onFinish() {
+                Log.i("We're done!", "No more countdown")
+            }
+        }.start()
+
     }
 }
